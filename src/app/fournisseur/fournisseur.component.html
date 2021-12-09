@@ -1,0 +1,28 @@
+<!-- <ul *ngFor='let item of tableau'>
+    <li>{{item.nom}}</li>
+    <li>{{item.email}}</li>
+    <li>{{item.tel}}</li>
+
+</ul> -->
+<div>
+    <h2> Liste Des Fournisseur</h2>
+</div>
+
+<table class = "table table-striped table-bordered" border="1">
+    <thead>
+        <tr>
+            <th> Nom</th>
+            <th> Prenom </th>
+            <th> Email Id</th>
+          
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let item of tableau" >
+            <td> {{ item.nom }} </td>
+            <td> {{ item.email }} </td>
+            <td> {{ item.tel }} </td>
+            
+        </tr>
+    </tbody>
+</table>
